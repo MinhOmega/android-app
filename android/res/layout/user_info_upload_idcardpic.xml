@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/bgcolor"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:padding="0dip" >
+
+    <include
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        layout="@layout/layout_top_bar_style2" />
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dip"
+        android:background="@drawable/bg_gray_square"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="7dip" >
+	<ImageView 
+	            android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/pic_user4"
+	    />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dip"
+        android:background="@drawable/bg_gray_square"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="7dip" >
+
+        <ImageView
+            android:id="@+id/imageview1"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/ic_paperwork" />
+
+        <Button
+            android:id="@+id/tbutton1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dip"
+            android:layout_marginRight="20dip"
+            android:layout_marginTop="20dip"
+            android:background="@drawable/btn_addcar"
+            android:text="拍摄或者上传行驶本照片"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_view_basesize" />
+    </LinearLayout>
+
+
+	<Button 
+	    
+	    android:id="@+id/uploadsubmit"
+	       android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dip"
+            android:enabled="false"
+            android:background="@drawable/btn_orange"
+            android:text="提交"
+	    />
+    
+</LinearLayout>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<resources>
+
+	<drawable name="red_color">#7f00</drawable>
+	<drawable name="blue_color">#770000ff</drawable>
+	<drawable name="green">#7700ff00</drawable>
+	<drawable name="yellow">#77ffff00</drawable>
+	<drawable name="screen_background_black">#ff000000</drawable>
+	<drawable name="translucent_background">#e0000000</drawable>
+	<drawable name="transparent_background">#00000000</drawable>
+	<drawable name="lightseagreen">#20B2AA</drawable>
+	<drawable name="listitemselector">#33CCFF</drawable>
+
+	<color name="pay_tras">#2472a0</color>
+
+	<color name="lightseagreen">#20B2AA</color>
+	<color name="yellow">#77ffff00</color>
+	<color name="red">#FF0000</color>
+	<color name="pink">#FF2EFF</color>
+	<color name="blue">#0000FF</color>
+	<color name="darkgreen">#008800</color>
+	<color name="white">#FFFFFF</color>
+	<color name="black">#000105</color>
+	<color name="touming">#00000000</color>
+	<color name="huise">#A9A9A9</color>
+	<color name="lightblue">#ADD8E6</color><!--亮蓝色 -->
+	<color name="fuchsia">#A8001A</color><!--紫红色 -->
+
+	<color name="lightgray">#D3D3D3</color><!--亮灰色 -->
+	<color name="dimgrey">#696969</color><!--暗灰色 -->
+	<color name="welcome_app">#ffd75c</color>
+	<color name="bg_color">#f5f6f7</color><!-- 背景色 -->
+	
+	<color name="buffer_textview">#0069bd</color>
+	<color name="baseColor">#91C855</color>
+	<color name="bgcolor">#F3f3f3</color>
+	<color name="base_gray">#DBDBDB</color>
+	<color name="text_gray">#858585</color>
+	
+
+</resources>

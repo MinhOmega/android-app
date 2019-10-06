@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+
+    <string-array name="car_band">
+        <item>奥迪</item>
+        <item>宝马</item>
+    </string-array>
+    <string-array name="car_picture">
+        <item>aodi_a.jpg</item>
+        <item>baoma_a.jpg</item>
+    </string-array>
+
+</resources>

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/bgcolor"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:padding="0dip" >
+
+    <include
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/layout_top_bar" />
+<RadioGroup 
+   android:layout_width="fill_parent"
+   android:paddingTop="7dip"
+        android:layout_height="wrap_content"
+        android:background="@drawable/nav_hint"
+    >
+    <RadioButton 
+           android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="离我最近"
+        android:padding="5dip"
+        android:textColor="@color/area_text_color"
+        android:button="@color/white"
+        android:background="@drawable/btn_area"
+        />
+   
+</RadioGroup>
+<RelativeLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dip"
+        android:layout_marginLeft="10dip"
+        android:layout_marginRight="10dip"
+        android:gravity="center"
+        android:background="@drawable/bg_search"
+    >
+
+    <TextView 
+         android:id="@+id/i2"
+         android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawableLeft="@drawable/ic_search"
+        android:text="我要去："
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:background="@color/white"
+        />
+    <EditText 
+        android:layout_toRightOf="@id/i2"
+         android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        />
+        
+    <ImageButton 
+        android:id="@+id/i3"
+        android:layout_margin="0dip"
+        android:background="@android:color/transparent"
+         android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:src="@drawable/btn_voice_green"
+        />
+</RelativeLayout>  
+<ListView 
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    ></ListView>
+</LinearLayout>

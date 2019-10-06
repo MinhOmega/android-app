@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/transparent"
+    android:orientation="vertical" >
+
+    <com.instcar.android.view.CarTouXiangImg
+        android:id="@+id/room_user_photo_ss"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        android:src="@drawable/seat_empty" />
+
+    <TextView
+        android:id="@+id/room_user_name_ss"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:singleLine="true"
+        android:background="@android:color/transparent"
+        android:gravity="center"
+        />
+
+</LinearLayout>

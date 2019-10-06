@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/bgcolor"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:padding="0dip" >
+
+    <!-- header  开始 -->
+
+
+    <!-- header 结束 -->
+
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="-5dip"
+        android:background="@drawable/transparent_background" >
+
+        <com.baidu.mapapi.map.MapView
+            android:id="@+id/bmapView"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:clickable="true" />
+
+        <LinearLayout
+            android:id="@+id/mapzhezhao"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:alpha="50"
+            android:background="@drawable/bg_number"
+            android:clickable="true"
+            android:orientation="horizontal" />
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <include
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    layout="@layout/layout_top_bar" />
+
+                <LinearLayout
+                    android:id="@+id/top_bar_tip"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/nav_hint"
+                    android:gravity="center_vertical|left"
+                    android:orientation="vertical"
+                    android:paddingBottom="10dip"
+                    android:paddingLeft="5dip"
+                    android:paddingTop="10dip"
+                    android:textColor="@color/white"
+                    android:textSize="16sp" >
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:focusable="true" 
+						android:focusableInTouchMode="true" 
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="起点："
+                            android:textColor="@color/white" />
+
+                        <TextView
+                            android:id="@+id/textview_start"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="西二旗东大街"
+                            android:textColor="@color/white" />
+                        <Button 
+                            android:id="@+id/button_start"
+                               android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="走起"
+                            />
+                    </LinearLayout>
+                   
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="-5dip"
+                    android:background="@color/white"
+                    android:orientation="horizontal" >
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:orientation="vertical" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="终点:"
+                            android:textColor="@color/base_gray" />
+
+                        <EditText
+                            android:id="@+id/edittext_end"
+                            android:layout_width="200dip"
+                            android:layout_height="wrap_content"
+                            android:background="@android:color/transparent"
+                            android:text="潮白人家"
+                            android:textColor="@color/base_gray" />
+                    </LinearLayout>
+
+                    <ImageButton
+                        android:id="@+id/button_voice"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:layout_marginBottom="10dip"
+                        android:layout_marginTop="10dip"
+                        android:background="@android:color/transparent"
+                        android:src="@drawable/btn_goto"
+                        android:visibility="gone" />
+
+                    <ImageButton
+                        android:id="@+id/button_onsearch"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerInParent="true"
+                        android:layout_marginBottom="10dip"
+                        android:layout_marginRight="15dip"
+                        android:layout_marginTop="10dip"
+                        android:background="@android:color/transparent"
+                        android:src="@drawable/btn_microphone" />
+                </RelativeLayout>
+
+                <ListView
+                    android:id="@+id/listview_point"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:visibility="gone" >
+                </ListView>
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_margin="10dip" >
+
+                <ImageButton
+                    android:id="@+id/button_mylocation"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bg_number"
+                    android:src="@drawable/ic_arrow_s" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:background="@drawable/bg_number"
+                    android:gravity="center"
+                    android:orientation="horizontal" >
+
+                    <ImageButton
+                        android:id="@+id/button_sub"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@android:color/transparent"
+                        android:src="@drawable/ic_subtraction" />
+
+                    <TextView
+                        android:id="@+id/textview_mi"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dip"
+                        android:layout_marginRight="10dip"
+                        android:minWidth="50dip"
+                        android:text="200米" />
+
+                    <ImageButton
+                        android:id="@+id/button_add"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@android:color/transparent"
+                        android:src="@drawable/ic_addition" />
+                </LinearLayout>
+            </RelativeLayout>
+        </RelativeLayout>
+    </FrameLayout>
+
+</LinearLayout>

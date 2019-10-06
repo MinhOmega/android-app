@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/bgcolor"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:padding="0dip" >
+
+    <include
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        layout="@layout/layout_top_bar_style2" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dip"
+        android:layout_marginRight="10dip"
+        android:background="@drawable/bg_gray_square"
+        android:orientation="vertical" >
+
+        <EditText
+            android:id="@+id/edit_text_input"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:gravity="top"
+            android:maxLength="100"
+            android:minHeight="150dip"
+            android:singleLine="false"
+            android:text="我住朝阳区，我要去三里屯" />
+
+        <TextView
+            android:id="@+id/user_info_edit_tip"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:text="您还可以输入20字"
+            android:textColor="@color/base_gray" />
+    </LinearLayout>
+
+</LinearLayout>
